@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <title>Scorekeeper</title>
+</head>
+
+<body>
+    <div class="column is-one-third is-offset-4">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-2by1">
+                    <img src="ping-pong-bat.jpg" alt="Placeholder image" />
+                </figure>
+            </div>
+            <header class="card-header">
+                <p class="card-header-title" id="scorekeeper-description">Ping Pong Score Keeper</p>
+            </header>
+            <div id="scorekeeper" class="card-content pt-2">
+                <h2 id="player1-score" class="has-text-weight-semibold is-size-1">0</h2>
+                <h2 id="to" class="has-text-weight-semibold is-size-2">&nbsp;to&nbsp;</h2>
+                <h2 id="player2-score" class="has-text-weight-semibold is-size-1">0</h2>
+                <p id="scorekeeper-instructions" class="has-text-weight-normal is-size-5">Use the buttons below to keep
+                    score</p>
+                <div id="score-select" class="mt-4 mb-0">
+                    <h4 id="playing-to" class="is-size-4 has-text-weight-semibold">Playing To</h4>
+                    <div class="select is-rounded is-normal">
+                        <select name="total-score">
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <footer class="card-footer mb-0">
+                <button id="player1-button" class="is-primary button has-text-white card-footer-item is-normal">+1
+                    Player
+                    One</button>
+                <button id="player2-button" class="is-info button has-text-white card-footer-item is-normal">+1
+                    Player
+                    Two</button>
+                <button id="reset" class="is-danger button has-text-white card-footer-item is-normal">Reset</button>
+            </footer>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css";
+
+#player1-score,
+#player2-score,
+#to,
+#playing-to {
+    display: inline;
+}
